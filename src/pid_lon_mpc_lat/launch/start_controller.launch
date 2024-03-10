@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Load all parameters -->
+  <param name="waypoint_file" value ="$(find pid_lon_mpc_lat)/data/straight_circle.csv"/>
+  <!-- Launch the learning MPC -->
+  <node pkg="pid_lon_mpc_lat" name="vehicle_controller" type="vehicle_controller" output="screen">
+  </node>
+
+</launch>

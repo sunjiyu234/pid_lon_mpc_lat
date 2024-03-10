@@ -1,0 +1,8 @@
+prefix=/home/sun234/pid_lon_mpc_lat/install
+
+Name: pid_lon_mpc_lat
+Description: Description of pid_lon_mpc_lat
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpid_lon_mpc_lat
+Requires: roscpp rospy std_msgs

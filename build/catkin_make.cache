@@ -1,0 +1,2 @@
+pid_lon_mpc_lat
+-DCATKIN_DEVEL_PREFIX=/home/sun234/pid_lon_mpc_lat/devel -DCMAKE_INSTALL_PREFIX=/home/sun234/pid_lon_mpc_lat/install -G Unix Makefiles
