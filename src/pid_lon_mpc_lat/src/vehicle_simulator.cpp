@@ -27,6 +27,10 @@ VehicleSimulator::VehicleSimulator(double x_init, double y_init, double yaw_init
     path_pub = nh.advertise<nav_msgs::Path>("/real_path", 10);
 }
 
+VehicleSimulator::~VehicleSimulator(){
+    delete vehicle_;
+}
+
 void VehicleSimulator::vehicleModelCallback(const ackermann_msgs::AckermannDriveStampedConstPtr &msgs){
     // 获取当前控制量
     vehicle_->sim_control_cmd_.T = msgs->drive.acceleration;

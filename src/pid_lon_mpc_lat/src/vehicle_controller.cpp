@@ -18,6 +18,12 @@ VehicleController::VehicleController(ros::NodeHandle& nh){
     state_sub = nh.subscribe("/vehicle_state", 10, &VehicleController::stateCallback, this);
 }
 
+VehicleController::~VehicleController(){
+    delete trajectory_processor_;
+    delete pid_controller_;
+    delete mpc_controller_;
+}
+
 void VehicleController::stateCallback(const nav_msgs::OdometryConstPtr &msgs){
     // 获取当前车辆状态
     vehicle_state_.x = msgs->pose.pose.position.x;

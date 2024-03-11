@@ -60,6 +60,11 @@ public:
     VehicleController(ros::NodeHandle& nh);
 
     /*
+        析构函数
+    */
+    ~VehicleController();
+
+    /*
         回调函数
         输入：nav_msgs::OdometryConstPtr
         输出：无

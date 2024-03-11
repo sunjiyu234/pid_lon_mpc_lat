@@ -110,6 +110,11 @@ public:
         输入：各状态初值，
     */
     VehicleSimulator(double x_init, double y_init, double yaw_init, double vx_init, double vy_init, double r_init, ros::NodeHandle& nh);
+
+    /*
+        析构函数
+    */
+   ~VehicleSimulator();
    
     /*
         输入：ackermann_msgs::AckermannDriveStamped
