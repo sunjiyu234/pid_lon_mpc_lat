@@ -132,7 +132,7 @@ int main(int argc, char **argv){
     double x_next = stof(target_road_string.at(1).at(0));
     double y_init = stof(target_road_string.at(0).at(1));
     double y_next = stof(target_road_string.at(1).at(1));
-    double yaw_init = atan((y_next - y_init) / (x_next - x_init));
+    double yaw_init = atan2((y_next - y_init), (x_next - x_init));
 
     VehicleSimulator vehicle_sim(x_init, y_init, yaw_init, 0.0, 0.0, 0.0, nh);
 

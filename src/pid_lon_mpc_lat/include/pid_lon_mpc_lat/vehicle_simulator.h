@@ -114,7 +114,7 @@ public:
     /*
         析构函数
     */
-   ~VehicleSimulator();
+   virtual ~VehicleSimulator();
    
     /*
         输入：ackermann_msgs::AckermannDriveStamped

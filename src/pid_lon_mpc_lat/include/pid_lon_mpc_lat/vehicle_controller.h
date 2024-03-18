@@ -62,7 +62,7 @@ public:
     /*
         析构函数
     */
-    ~VehicleController();
+    virtual ~VehicleController();
 
     /*
         回调函数
